@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="44dp"
+            android:src="@drawable/onblogo"
+            android:layout_marginBottom="64dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collect your food with this QR"
+            android:fontFamily="@font/urbanist_semibold"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please do share your feedback with us"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/qr_img"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="56dp"/>
+
+        <Button
+            android:onClick="goHome"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_stroked"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/urbanist_semibold"
+            android:text="Go to Home"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_orange"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

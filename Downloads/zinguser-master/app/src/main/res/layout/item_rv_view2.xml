@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="15dp">
+
+
+
+    <club.cred.neopop.PopFrameLayout
+        android:id="@+id/search_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
+        app:neopop_bottom_surface_color="@color/black"
+        app:neopop_button_position="bottom|right"
+        app:neopop_center_surface_color="@color/white"
+        app:neopop_depth="3dp"
+        app:neopop_parent_view_color="@color/black"
+        app:neopop_right_surface_color="@color/black"
+        app:neopop_shimmer_color="#FFF79767"
+        app:neopop_shimmer_duration="5000"
+        app:neopop_shimmer_width="24dp"
+        app:neopop_stroke_color="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/item_rv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header">
+
+
+
+            <club.cred.neopop.PopFrameLayout
+                android:id="@+id/restaurant_image_popLayout"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="12dp"
+                app:neopop_bottom_surface_color="@color/black"
+                app:neopop_button_position="bottom|right"
+                app:neopop_center_surface_color="@color/white"
+                app:neopop_depth="4dp"
+                app:neopop_parent_view_color="@color/black"
+                app:neopop_right_surface_color="@color/black"
+                app:neopop_stroke_color="@color/black">
+
+
+                <ImageView
+
+                    android:id="@+id/item_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:foreground="@drawable/image_overlay_full"
+                    android:src="@drawable/food_image" />
+
+            </club.cred.neopop.PopFrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/restaurant_image_popLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/duplet_semibold"
+                    android:text="Cheese Chicken\nAlfredo Maggi"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/btns"
+            android:layout_marginRight="12dp">
+
+            <ImageView
+                android:id="@+id/substract"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/substract"/>
+
+
+
+
+            <TextView
+                android:id="@+id/item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/add"/>
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="12dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="12dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clashdisplay_regular"
+                android:text="Item Total"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:text="₹ 190.00"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+
+
+            
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    </club.cred.neopop.PopFrameLayout>
+
+</RelativeLayout>

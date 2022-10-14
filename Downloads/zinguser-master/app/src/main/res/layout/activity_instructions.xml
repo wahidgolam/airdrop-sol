@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instructions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:animateLayoutChanges="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="82dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/onblogo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp"
+            android:layout_marginTop="54dp"
+            >
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructions"
+                android:textSize="24dp"
+                android:fontFamily="@font/urbanist_bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="42dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/doneicon" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Food Collection"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:letterSpacing="0"
+                    android:textColor="@color/dark_orange"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please collect the food as soon as it is prepared. It shall become diffuclt for us to serve hot and fresh food, if you delay order collection"
+                android:textSize="14dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:layout_marginTop="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="42dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/doneicon" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Complaints"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:letterSpacing="0"
+                    android:textColor="@color/dark_orange"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact us directly for any query, complaint, feedback or suggestion. Find the contact us button in the Settings"
+                android:textSize="14dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:layout_marginTop="8dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="42dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/doneicon" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Payments"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:letterSpacing="0"
+                    android:textColor="@color/dark_orange"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payments are to be made before placing the order. If the order is denied, we will refund the amount at the earliest"
+                android:textSize="14dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:paddingHorizontal="55dp"
+            >
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginRight="25dp"
+                android:text="Back"
+                android:textSize="15dp"
+                android:textColor="@color/dark_orange"
+                android:background="@drawable/button_stroked"
+                android:letterSpacing="0"
+                android:textAllCaps="false"
+                android:onClick="backPressed"/>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_filled"
+                android:fontFamily="@font/urbanist_semibold"
+                android:text="Next"
+                android:textSize="15dp"
+                android:letterSpacing="0"
+                android:textAllCaps="false"
+                android:onClick="nextPressed"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

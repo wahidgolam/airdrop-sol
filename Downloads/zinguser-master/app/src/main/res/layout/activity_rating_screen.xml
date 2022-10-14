@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingScreen"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ice N' Spice #2234"
+        android:textSize="12dp"
+        android:fontFamily="@font/urbanist_medium"
+        android:layout_gravity="center"
+        android:layout_marginTop="42dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was your order?"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/urbanist_bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ratingimg"/>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Was your order prepared when promised?"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/group1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group1card1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group1text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group1card2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group1text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group1card3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group1text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group1card4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                app:cardBackgroundColor="@color/dark_orange"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group1text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group1card5"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group1text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Was too late"
+                android:fontFamily="@font/urbanist_medium"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Was on time"
+                android:fontFamily="@font/urbanist_medium"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Was your food hot and fresh?"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/group2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group2card1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group2text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group2card2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group2text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group2card3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group2text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group2card4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                app:cardBackgroundColor="@color/dark_orange"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group2text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group2card5"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group2text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:text="Was cold"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:text="Was hot and fresh"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How was your overall app experience?"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/group3"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group3card1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group3text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group3card2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group3text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group3card3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group3text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group3card4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group3text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/group3card5"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:backgroundTint="@null"
+                android:background="@color/colorTransparent"
+                app:cardBackgroundColor="@color/dark_orange"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/group3text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/urbanist_bold"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:text="Not good"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/urbanist_medium"
+                android:text="Loved it"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_stroked"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/urbanist_semibold"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_orange"
+            android:textSize="14dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_filled"
+            android:backgroundTint="@null"
+            android:clickable="true"
+            android:fontFamily="@font/urbanist_semibold"
+            android:onClick="updateRating"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

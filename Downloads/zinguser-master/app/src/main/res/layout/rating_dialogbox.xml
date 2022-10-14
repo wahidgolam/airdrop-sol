@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <club.cred.neopop.PopFrameLayout
+        android:id="@+id/search_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:padding="5dp"
+        app:neopop_bottom_surface_color="@color/black"
+        app:neopop_button_position="bottom|right"
+        app:neopop_center_surface_color="@color/white"
+        app:neopop_depth="3dp"
+        app:neopop_parent_view_color="@color/black"
+        app:neopop_right_surface_color="@color/black"
+        app:neopop_shimmer_color="#FFF79767"
+        app:neopop_shimmer_duration="5000"
+        app:neopop_shimmer_width="24dp"
+        app:neopop_stroke_color="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/underlined_ratings"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/headingText"/>
+
+            <RatingBar
+                android:id="@+id/ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headingText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratings"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:text="Skip"
+                android:textColor="#A1A1A1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratings"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:text="Submit"
+                android:textColor="#A1A1A1"
+                android:textSize="20sp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/skip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratings"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:text="Skip"
+                android:textColor="#A1A1A1"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ratings"
+                android:layout_marginTop="32dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:text="Subspot"
+                android:textColor="#2b2b2b"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurant_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/duplet_semibold"
+                android:text="Chicken Cheese Maggie"
+                android:textColor="#2b2b2b"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X 1"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/restaurant_name"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/duplet_bold"
+                android:textColor="#2b2b2b"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_quantity"
+                android:layout_marginTop="12dp"
+                android:background="@color/black" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider1"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/clashdisplay_regular"
+                    android:text="Item Total"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/clashdisplay_semibold"
+                    android:text="₹ 190.00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </club.cred.neopop.PopFrameLayout>
+
+
+
+
+
+</RelativeLayout>

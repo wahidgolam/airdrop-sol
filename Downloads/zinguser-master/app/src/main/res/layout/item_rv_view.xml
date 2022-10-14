@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white"
+    android:layout_marginBottom="10dp"
+    >
+
+
+    <club.cred.neopop.PopFrameLayout
+        android:id="@+id/outletCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        app:neopop_bottom_surface_color="@color/dark_orange"
+        app:neopop_button_position="bottom|right"
+        app:neopop_center_surface_color="@color/white"
+        app:neopop_depth="3dp"
+        app:neopop_parent_view_color="@color/black"
+        app:neopop_right_surface_color="@color/dark_orange">
+
+
+        <RelativeLayout
+            android:id="@+id/item_rv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/button_stroked">
+
+
+            <club.cred.neopop.PopFrameLayout
+                android:id="@+id/restaurant_image_popLayout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                app:neopop_bottom_surface_color="@color/black"
+                app:neopop_button_position="bottom|right"
+                app:neopop_center_surface_color="@color/white"
+                app:neopop_depth="4dp"
+                app:neopop_parent_view_color="@color/black"
+                app:neopop_right_surface_color="@color/black"
+                app:neopop_stroke_color="@color/black">
+
+
+                <ImageView
+
+                    android:id="@+id/item_image"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentStart="true"
+                    android:foreground="@drawable/image_overlay_full"
+                    android:src="@drawable/food_image" />
+
+            </club.cred.neopop.PopFrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/restaurant_image_popLayout"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/duplet_semibold"
+                        android:text="Cheese Chicken\nChicken Sandwitch"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/veg_image"
+                        android:layout_width="10dp"
+                        android:visibility="gone"
+                        android:layout_height="10dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/nonveg" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/clashdisplay_semibold"
+                    android:gravity="center"
+                    android:text="₹99"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/add_button"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/urbanist_semibold"
+                    android:padding="0dp"
+                    android:src="@drawable/add_item"
+                    android:text="+"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </club.cred.neopop.PopFrameLayout>
+
+
+
+
+</RelativeLayout>

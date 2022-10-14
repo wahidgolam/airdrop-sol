@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="15dp">
+
+
+
+    <club.cred.neopop.PopFrameLayout
+        android:id="@+id/search_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
+        app:neopop_bottom_surface_color="@color/black"
+        app:neopop_button_position="bottom|right"
+        app:neopop_center_surface_color="@color/white"
+        app:neopop_depth="3dp"
+        app:neopop_parent_view_color="@color/black"
+        app:neopop_right_surface_color="@color/black"
+        app:neopop_shimmer_color="#FFF79767"
+        app:neopop_shimmer_duration="5000"
+        app:neopop_shimmer_width="24dp"
+        app:neopop_stroke_color="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/item_rv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/header">
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/header1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            android:id="@+id/restaurant_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/clashdisplay_semibold"
+                            android:text="Subspot"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(view map)"
+                            android:textColor="#3497F2"
+                            android:fontFamily="@font/clashdisplay_semibold"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/viewMap"/>
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/orderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12.02.2022"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/clashdisplay_medium"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:orientation="horizontal"
+                android:id="@+id/header3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/duplet_semibold"
+                    android:text="Chicken Cheese Maggie"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/totalQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/duplet_bold"
+                    android:text="X 1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_below="@+id/header3"
+                android:layout_marginTop="12dp"
+                android:id="@+id/divider"/>
+
+            <RelativeLayout
+                android:id="@+id/header4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/clashdisplay_regular"
+                    android:text="Item Total"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/clashdisplay_semibold"
+                    android:text="₹ 190.00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/header4">
+
+               <Button
+                   android:id="@+id/help"
+                   android:layout_weight="0.5"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:background="@drawable/button_stroked"
+                   android:backgroundTint="@null"
+                   android:fontFamily="@font/clashdisplay_semibold"
+                   android:text="Help"
+                   android:textAllCaps="false"
+                   android:textColor="@color/dark_orange"
+                   android:textSize="18dp"
+                   android:letterSpacing="0.0"
+                   android:layout_marginLeft="12dp"
+
+                   />
+
+               <LinearLayout
+                   android:background="@drawable/button_filled"
+                   android:layout_weight="1"
+                   android:id="@+id/orderStatus"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   android:fontFamily="@font/clashdisplay_semibold"
+                   android:text="Show QR"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="18dp"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginRight="12dp"
+                   android:orientation="horizontal"
+                   android:paddingVertical="13dp">
+
+                   <TextView
+                       android:id="@+id/orderStatusText"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/clashdisplay_semibold"
+                       android:text="Show QR"
+                       android:textAllCaps="false"
+                       android:textColor="@color/white"
+                       android:textSize="18dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"/>
+
+
+               </LinearLayout>
+           </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </club.cred.neopop.PopFrameLayout>
+
+</RelativeLayout>

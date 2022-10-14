@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/duplet_semibold"
+        android:text="Chicken Cheese Maggie"
+        android:textColor="#2b2b2b"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X 2"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/duplet_bold"
+        android:textSize="16sp"
+        android:textColor="#2b2b2b"
+        android:id="@+id/item_quantity"/>
+
+
+
+
+</RelativeLayout>

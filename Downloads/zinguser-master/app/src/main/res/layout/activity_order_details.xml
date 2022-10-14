@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="@color/dark_orange">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cart_lower_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/dark_orange"
+            app:cardCornerRadius="8dp"
+            android:elevation="2dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/cart_total2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facing Problems?"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/urbanist_semibold"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/white_button"
+                    android:backgroundTint="@null"
+                    android:fontFamily="@font/urbanist_medium"
+                    android:letterSpacing="0"
+                    android:onClick="contactSupport"
+                    android:text="Contact Support"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:backgroundTint="@null"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/restaurant_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ice N' Spice"
+                        android:fontFamily="@font/urbanist_light"
+                        android:textColor="@color/white"/>
+
+
+                    <TextView
+                            android:id="@+id/item_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/urbanist_bold"
+                            android:letterSpacing="0"
+                            android:text="Food Name"
+                            android:textColor="@color/white"
+                            android:textSize="28dp"
+                            android:layout_marginLeft="0dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <LinearLayout
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:padding="2dp"
+                            android:background="@drawable/round_circle">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/done"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/orderStatus"
+                            android:text="Completed"
+                            android:textSize="6dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/urbanist_semibold"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="10dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/credit_card" />
+
+                        <TextView
+                            android:id="@+id/upper_cart_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/urbanist_semibold"
+                            android:text="₹ 60.00"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-2dp"
+                            android:fontFamily="@font/urbanist_medium"
+                            android:text="Total"
+                            android:textColor="@color/grey"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/off_white"
+                app:cardCornerRadius="0dp" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="136dp"
+                    android:translationZ="5dp"
+                    app:cardBackgroundColor="#00ffffff"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/MyCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            app:cardBackgroundColor="@color/off_white"
+                            app:cardElevation="0dp"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardBackgroundColor="@color/off_white"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--Empty Cart View -->
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/empty_cart_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="240dp"
+                                        android:layout_height="168dp"
+                                        android:src="@drawable/empty_cart_image"
+                                        android:layout_marginTop="48dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="We couldn’t find any order in the cart"
+                                        android:layout_marginTop="40dp"
+                                        android:textSize="24dp"
+                                        android:fontFamily="@font/urbanist_semibold"
+                                        android:textColor="@color/black"
+                                        android:layout_marginHorizontal="64dp"
+                                        android:textAlignment="center"
+                                        android:letterSpacing="0"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Don’t wait for Good Food. Let us redirect you to where you can find the best food in campus"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="12dp"
+                                        android:fontFamily="@font/urbanist_medium"
+                                        android:textColor="@color/grey"
+                                        android:layout_marginHorizontal="64dp"
+                                        android:textAlignment="center"
+                                        android:letterSpacing="0"/>
+                                    <Button
+                                        android:layout_width="260dp"
+                                        android:layout_height="54dp"
+                                        android:text="Take me to good food"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/urbanist_medium"
+                                        android:textSize="16dp"
+                                        android:letterSpacing="0"
+                                        android:layout_marginTop="40dp"/>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/cart_relative_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginBottom="18dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="24dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="4dp"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="15dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginRight="8dp"
+                                                android:src="@drawable/dropdown" />
+
+                                            <TextView
+                                                android:id="@+id/textView25"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/urbanist_bold"
+                                                android:text="Order Details"
+                                                android:textColor="@color/black"
+                                                android:textSize="16dp" />
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/textView45"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/urbanist_medium"
+                                            android:text="Ordered on 12-09-22"
+                                            android:textColor="@color/grey"
+                                            android:textSize="12dp" />
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                                <!--cart_relative_layout-->
+                                <!--enter cart items-->
+                                <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/cart_material_card_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="24dp"
+                                    app:cardCornerRadius="10dp"
+                                    android:elevation="2dp"
+                                    android:layout_marginBottom="24dp">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:id="@+id/cart_outlet_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="8dp"
+                                            android:text="Red Chillies"
+                                            android:layout_marginLeft="16dp"
+                                            android:fontFamily="@font/urbanist_medium"
+                                            android:textSize="14dp"
+                                            android:textColor="@color/grey"/>
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/cart_item_rv"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:overScrollMode="never"/>
+                                    </LinearLayout>
+
+                                </com.google.android.material.card.MaterialCardView>
+                                <!--cart_material_cart_view-->
+                                <!--cart_lower_card-->
+                                <RelativeLayout
+                                    android:id="@+id/number_linear_layout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="24dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginBottom="16dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/txt23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="4dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+
+
+                                        <TextView
+                                            android:id="@+id/textView251"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/urbanist_bold"
+                                            android:text="We need your feedback"
+                                            android:textColor="@color/black"
+                                            android:textSize="16dp" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_below="@+id/txt23"
+                                        android:id="@+id/textView451"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/urbanist_medium"
+                                        android:text="Help us serve you better"
+                                        android:textColor="@color/grey"
+                                        android:textSize="12dp" />
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="33dp"
+                                        android:layout_marginRight="24dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/white_button"
+                                        android:backgroundTint="@null"
+                                        android:fontFamily="@font/urbanist_medium"
+                                        android:letterSpacing="0"
+                                        android:onClick="contactSupport"
+                                        android:text="Submit Feedback"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp"
+                                        app:backgroundTint="@null"/>
+
+                                </RelativeLayout>
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

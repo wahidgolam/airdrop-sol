@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homescreen">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF4EA">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF4EA">
+
+                <RelativeLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/dark_orange">
+
+
+                    <RelativeLayout
+                        android:id="@+id/topHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="24dp">
+
+
+                        <TextView
+                            android:id="@+id/zingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/clashdisplay_semibold"
+                            android:text="zing."
+                            android:textColor="#FBFAF8"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/collegeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_toStartOf="@+id/dropdown_menu"
+                            android:fontFamily="@font/duplet_semibold"
+                            android:text="Koramangala"
+                            android:textColor="#FBFAF8"
+                            android:textSize="18.11sp" />
+
+                        <ImageView
+                            android:id="@+id/dropdown_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/dropdown" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/clashdisplay_semibold"
+                        android:text="Hello Saswata!"
+                        android:textColor="#FBFAF8"
+                        android:textSize="26sp" />
+
+
+                </RelativeLayout>
+
+
+                <club.cred.neopop.PopFrameLayout
+                    android:id="@+id/search_restaurants"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/header"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="-27dp"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    app:neopop_bottom_surface_color="@color/black"
+                    app:neopop_button_position="bottom|right"
+                    app:neopop_center_surface_color="@color/white"
+                    app:neopop_depth="3dp"
+                    app:neopop_parent_view_color="@color/black"
+                    app:neopop_right_surface_color="@color/black"
+                    app:neopop_shimmer_color="#FFF79767"
+                    app:neopop_shimmer_duration="5000"
+                    app:neopop_shimmer_width="24dp"
+                    app:neopop_stroke_color="@color/black">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/searchBtn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/search" />
+
+                        <EditText
+                            android:id="@+id/search_outlet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@+id/searchBtn"
+                            android:background="@color/white"
+                            android:fontFamily="@font/duplet_regular"
+                            android:hint="What are you ordering today?"
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+
+                </club.cred.neopop.PopFrameLayout>
+
+                <TextView
+                    android:id="@+id/restaurants_nearyou"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/search_restaurants"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/clashdisplay_semibold"
+                    android:text="restaurants near me"
+                    android:textColor="#333"
+                    android:textSize="22sp" />
+
+
+                <!--  Recycler View-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/restaurants_nearyou"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFF4EA">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="80dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/bottomMargin"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/recyclerView"
+                        android:orientation="horizontal" />
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomNavbar"
+            >
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderRV"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/bottomNavbar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rad13_bottomback"
+            android:paddingBottom="8dp"
+            android:elevation="10dp"
+            android:translationZ="500dp"
+            android:clickable="true"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginBottom="8dp"
+                >
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:elevation="10dp"
+                >
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/history_layout">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/history_black"
+                    android:padding="14dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/history_image"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/home_layout"
+                android:layout_marginLeft="56dp"
+
+                android:layout_toEndOf="@+id/history_layout"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:src="@drawable/zing"
+                    android:id="@+id/home_image"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="56dp"
+
+                android:id="@+id/cart_layout"
+                android:layout_toEndOf="@+id/home_layout">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:src="@drawable/cart_black"
+                    android:id="@+id/cart_image"/>
+
+            </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

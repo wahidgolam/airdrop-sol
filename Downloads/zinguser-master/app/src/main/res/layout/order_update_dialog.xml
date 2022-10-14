@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp">
+        <ImageView
+            android:id="@+id/status_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/accepted_icon"/>
+        <TextView
+            android:id="@+id/upper_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Accepted"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_semibold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/order_image_dialog"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="6dp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/image_overlay_full"
+                    android:src="@drawable/food_image" />
+
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_toRightOf="@+id/order_image_dialog"
+                android:id="@+id/linlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/outlet_name_id_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanist_medium"
+                    android:text="Red Chillies #8911"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/item_name_quantity_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanist_semibold"
+                    android:letterSpacing="0"
+                    android:text="French Fries x5"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/QR"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_alignParentRight="true"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/right_side_stuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/timer_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/menlo_bold"
+                android:letterSpacing="0"
+                android:text="-:-"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/status_text_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanist_medium"
+                android:text="approval pending"
+                android:textColor="@color/grey"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

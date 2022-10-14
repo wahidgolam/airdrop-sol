@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseCampus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:background="@color/dark_orange"
+            android:id="@+id/header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:text="zing."
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:layout_marginTop="24dp"/>
+
+
+
+        </RelativeLayout>
+
+
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/search_campus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/header"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="-30dp"
+            android:clickable="true"
+            android:padding="5dp"
+            app:neopop_bottom_surface_color="@color/black"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="@color/white"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/searchBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/search" />
+
+                <EditText
+                    android:id="@+id/search_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/searchBtn"
+                    android:background="@color/white"
+                    android:fontFamily="@font/duplet_regular"
+                    android:hint="Search for your campus"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+
+        </club.cred.neopop.PopFrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/search_campus">
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/campusRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/onboardHeading"
+                    android:layout_marginTop="20dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+
+
+
+
+
+
+        <!--<LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:paddingHorizontal="55dp">
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_filled"
+                android:fontFamily="@font/urbanist_semibold"
+                android:text="Save"
+                android:textSize="15dp"
+                android:letterSpacing="0"
+                android:textAllCaps="false"
+                android:onClick="goAhead"/>
+        </LinearLayout>-->
+
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/login_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#F5765B"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_stroke_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_bottom_surface_color="@color/black">
+
+            <TextView
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </club.cred.neopop.PopFrameLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

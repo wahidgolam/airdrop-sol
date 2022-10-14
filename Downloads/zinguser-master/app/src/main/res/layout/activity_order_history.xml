@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderHistory"
+    android:background="#FFF4EA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF4EA">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:background="@color/dark_orange">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:text="order history"
+                android:textColor="#FBFAF8"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/back_black_group" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/extendedHeader"
+            style="@style/MyCardView"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="-20dp"
+            app:cardBackgroundColor="#FFF4EA"
+            app:cardElevation="0dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut" />
+
+        <RelativeLayout
+            android:id="@+id/header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/extendedHeader"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="24dp">
+
+
+            <TextView
+                android:id="@+id/completeOrderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:text="your orders"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header2"
+                android:id="@+id/header3"
+                android:layout_marginBottom="40dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomNavbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rad13_bottomback"
+        android:paddingBottom="8dp"
+        android:elevation="10dp"
+        android:translationZ="500dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginBottom="8dp"
+            >
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/history_layout">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/history_black"
+                    android:padding="14dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/history_image"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/home_layout"
+                android:layout_marginLeft="56dp"
+
+                android:layout_toEndOf="@+id/history_layout"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:src="@drawable/zing"
+                    android:id="@+id/home_image"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="56dp"
+
+                android:id="@+id/cart_layout"
+                android:layout_toEndOf="@+id/home_layout">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:src="@drawable/cart_black"
+                    android:id="@+id/cart_image"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_orderhistory_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="276dp"
+            android:src="@drawable/unsuccessful"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looks like you haven’t ordered anything yet!"
+            android:fontFamily="@font/clashdisplay_medium"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:padding="24dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

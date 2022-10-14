@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <club.cred.neopop.PopFrameLayout
+        android:id="@+id/outletCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="17dp"
+        android:clickable="true"
+        app:neopop_bottom_surface_color="@color/dark_orange"
+        app:neopop_button_position="bottom|right"
+        app:neopop_center_surface_color="@color/white"
+        app:neopop_depth="4dp"
+        app:neopop_parent_view_color="@color/black"
+        app:neopop_right_surface_color="@color/dark_orange">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/button_stroked">
+
+            <club.cred.neopop.PopFrameLayout
+                android:id="@+id/restaurant_image_popLayout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                app:neopop_bottom_surface_color="@color/dark_orange"
+                app:neopop_button_position="bottom|right"
+                app:neopop_center_surface_color="@color/white"
+                app:neopop_depth="4dp"
+                app:neopop_stroke_color="@color/black"
+                app:neopop_parent_view_color="@color/black"
+                app:neopop_right_surface_color="@color/dark_orange">
+
+                <ImageView
+                    android:id="@+id/restaurant_image"
+                    android:layout_margin="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/restaurant_photo" />
+
+            </club.cred.neopop.PopFrameLayout>
+
+            <TextView
+                android:id="@+id/outletName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/restaurant_image_popLayout"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:letterSpacing="0.03"
+                android:text="Ice N' Spice"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/outlet_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outletName"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/restaurant_image_popLayout"
+                android:fontFamily="@font/duplet_regular"
+                android:text="Snacks and Shawarma"
+                android:textSize="14sp" />
+
+            <club.cred.neopop.PopFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outlet_category"
+                android:layout_toEndOf="@id/restaurant_image_popLayout"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="5dp"
+                app:neopop_bottom_surface_color="@color/black"
+                app:neopop_button_position="bottom|right"
+                app:neopop_center_surface_color="@color/white"
+                app:neopop_depth="2dp"
+                app:neopop_stroke_color="@color/black"
+                app:neopop_parent_view_color="@color/black"
+                app:neopop_right_surface_color="@color/black">
+
+                <TextView
+                    android:id="@+id/outlet_zing_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="15 min"
+                    android:fontFamily="@font/duplet_bold"
+                    android:textColor="#333"
+                    android:padding="5dp"/>
+
+
+            </club.cred.neopop.PopFrameLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </club.cred.neopop.PopFrameLayout>
+
+
+
+</RelativeLayout>

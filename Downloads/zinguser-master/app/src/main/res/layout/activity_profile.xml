@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="#FFF4EA">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/dark_orange">
+
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back_black_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.1"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="34dp"
+            android:textColor="#FBFAF8"
+            />
+
+    </RelativeLayout>
+    
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/zing_roundlogo"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zing."
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FE834F"/>
+
+
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/terms_and_condition"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:neopop_bottom_surface_color="@color/black"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#F5765B"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:gravity="center"
+                android:text="Terms &amp; Conditions"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </club.cred.neopop.PopFrameLayout>
+
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:neopop_bottom_surface_color="@color/black"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#F5765B"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:gravity="center"
+                android:text="Privacy Policy"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </club.cred.neopop.PopFrameLayout>
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/report_a_bug"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:neopop_bottom_surface_color="@color/black"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#F5765B"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:gravity="center"
+                android:text="Report a Bug"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </club.cred.neopop.PopFrameLayout>
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:neopop_bottom_surface_color="@color/black"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#F5765B"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </club.cred.neopop.PopFrameLayout>
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/take_our_survey"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:neopop_bottom_surface_color="@color/black"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#F5765B"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/black"
+            app:neopop_right_surface_color="@color/black"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:gravity="center"
+                android:text="Take Our Survey"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </club.cred.neopop.PopFrameLayout>
+        <club.cred.neopop.PopFrameLayout
+            android:id="@+id/Unzing"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:neopop_bottom_surface_color="@color/dark_orange"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="@color/white"
+            app:neopop_depth="3dp"
+            app:neopop_parent_view_color="@color/dark_orange"
+            app:neopop_right_surface_color="@color/dark_orange"
+            app:neopop_shimmer_color="#FFF79767"
+            app:neopop_shimmer_duration="5000"
+            app:neopop_shimmer_width="24dp"
+            app:neopop_stroke_color="@color/dark_orange">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/duplet_bold"
+                android:gravity="center"
+                android:text="UnZing"
+                android:textAlignment="center"
+                android:textColor="#F5765B"
+                android:textSize="20sp" />
+
+
+        </club.cred.neopop.PopFrameLayout>
+
+       <!-- <Button
+            android:onClick="openTerms"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:text="Terms and Conditions"
+            android:textAllCaps="false"
+            android:letterSpacing="0.01"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_filled"
+            android:layout_marginTop="48dp"/>
+        <Button
+            android:onClick="openPrivacy"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:text="Privacy Policy"
+            android:textAllCaps="false"
+            android:letterSpacing="0.01"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_filled"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:onClick="openReport"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:text="Report a bug"
+            android:textAllCaps="false"
+            android:letterSpacing="0.01"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_filled"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:onClick="openSurvey"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:text="Take our Survey"
+            android:textAllCaps="false"
+            android:letterSpacing="0.01"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_filled"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:onClick="openFeatureSuggest"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:text="Contact us"
+            android:textAllCaps="false"
+            android:letterSpacing="0.01"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_filled"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:text="UnZing💔"
+            android:textAllCaps="false"
+            android:letterSpacing="0.01"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_stroked"
+            android:textColor="@color/dark_orange"
+            android:layout_marginTop="16dp"
+            android:onClick="signOut"/>-->
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

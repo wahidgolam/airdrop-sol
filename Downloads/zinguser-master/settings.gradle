@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven
+                {
+                    url 'https://maven.cashfree.com/release'
+
+
+                }
+        maven {
+            url = 'https://libs.dev.cred.club/'
+        }
+        jcenter()
+
+    }
+}
+rootProject.name = "Zing"
+include ':app'
